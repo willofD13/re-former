@@ -32,7 +32,7 @@
 
 <div>
     <%= form.label :email %><br>
-    <%= form.email_field :email %>
+    <%= form.email_field :email, placeholder: "example@example.com" %>
     <% @user.errors.full_messages_for(:email).each do |message| %>
     <div><%= message %></div>
     <% end %>
