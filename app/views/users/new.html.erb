@@ -40,7 +40,7 @@
 
 <div>
     <%= form.label :password %><br>
-    <%= form.password_field :password %>
+    <%= form.password_field :password, placeholder: "example: user123!"%>
     <% @user.errors.full_messages_for(:password).each do |message| %>
     <div><%= message %></div>
     <% end %>
