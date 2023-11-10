@@ -23,7 +23,7 @@
 
 <%= form_with model: @user do |form|%>
 <div>
-    <%= form.label :username %><br>
+    <%= form.label :Enter_username %><br>
     <%= form.text_field :username, value: "newuser123"%>
     <% @user.errors.full_messages_for(:username).each do |message|%>
     <div> <%= message %> </div>
@@ -31,7 +31,7 @@
 </div>
 
 <div>
-    <%= form.label :email %><br>
+    <%= form.label :Your_email_here %><br>
     <%= form.email_field :email, placeholder: "example@example.com" %>
     <% @user.errors.full_messages_for(:email).each do |message| %>
     <div><%= message %></div>
@@ -39,7 +39,7 @@
 </div>
 
 <div>
-    <%= form.label :password %><br>
+    <%= form.label :And_your_password %><br>
     <%= form.password_field :password, placeholder: "example: user123!"%>
     <% @user.errors.full_messages_for(:password).each do |message| %>
     <div><%= message %></div>
